@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in html</title>
+</head>
+<body>
+    <!-- form -->
+    <form action="/action">
+        Username:
+        <input type="text" placeholder="Enter Username" required> <br>
+        Email:
+        <input type="emial" placeholder="Enter email" required> <br>
+        Password:
+        <input type="password" placeholder="Enter password" required> <br>
+        Number:
+        <input type="number" placeholder="Enter number" required> <br>
+        Date of Birth:
+        <input type="date" placeholder="Enter date of birth"> <br>
+        Time:
+        <input type="time"> <br>
+        color:
+        <input type="color">
+
+        <!-- button  -->
+        <button>Submit</button> <br>
+        <button type="button">do something</button>
+        <button type="reset" >reset</button>
+
+    </form>
+    <hr>
+    <hr>
+    <form action="action">
+        <label>
+            Name:
+            <input type="text" placeholder="Enter your name"> <br>
+        </label>
+        <label>
+            PRN:
+            <input type = "number" placeholder="Enter your PRN"> <br>
+        </label>
+
+        <!-- using clasical approach -->
+        <div>
+        <label for="Email">Emai:</label>
+        <input type="Email" id="Email" placeholder="Enter your mail">
+        </div>
+        <div>
+        <label for="Batch">Batch:</label>
+        <input type="text" id="Batch" placeholder="Enter your batch">
+        </div>
+        <!-- button using input  -->
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+    </form>
+    <hr>
+
+    <!-- name attribute  -->
+    <form action="/server">
+        <div>
+            <label for="username">username:</label>
+            <input type="text" id="username" name="username">
+        </div>
+        <button type="submit">submit</button>
+    </form>
+
+    <hr>
+    <hr>
+   
+    <form action="/main">
+    <!-- checkbox -->
+     <input type="checkbox" id="age" name="age" value="18+">
+     <label for="age">I'm 18+</label><br>
+     <input type="checkbox" id="gender" name="gender" checked value="Yes"> <!--by default it will be checked-->
+     <label for="gender">I'm a boy</label> <br>
+
+     what's your interest?? <br>
+     <input type="checkbox" id="Coding" name="interest" value="coding">
+     <label for="interest">coding</label>
+     <input type="checkbox" id="Sports" name="interest" value="sports">
+     <label for="Sports">Sports</label>
+     <input type="checkbox" id="Movies" name="interest" value="movies">
+     <label for="Movies">Movies</label>
+
+    <!-- radio button  -->
+    <p>What's your gender??</p>
+    <input type="radio" id="male" name="Gender" value="male">
+    <label for="male">male</label>
+    <input type="radio" id="female" name="Gender" value="female">
+    <label for="female">female</label>
+    <button type="submit">submit</button><br>
+    <hr>
+    <!--Select element: Dropdown-->
+    <div>
+    <label for="profession" >Choose Your Profession</label>
+    <select name="profession" id="profession">
+        <option value="student">Student</option>
+        <option value = "Deveoper" selected>Developer</option> <!--Developer will be pre-selected, which later on can be changed by selecting other options..-->
+        <option value = "Professor">Professor</option>
+    </select>
+    </div>
+    <!-- range attribute -->
+    <label for="volume">volume</label>
+    <input type="range" name="volume" min="10" max="100" id="volume">
+    <label for="volume 2">volume 2</label>
+    <input type="range" name="volume" min="10" max="100" step="10"> <!--increases or decreases by 10-->
+    <label for="volume-3">volume3</label>
+    <input type="range" name="volume" min="0" max="100" value="20"> <!--value will be pre-set to 20-->
+
+    <!-- Text Area  -->
+    <label for="feedback">Provide your feedback</label>
+    <textarea id="feedback" name="feedback" placeholder="feedback here"></textarea> <br>
+    <label for"feedback">Provide your valuable feedback</label>
+    <textarea id="feedback" name="feedback" rows="5" cols="20" placeholder="feedback here"></textarea> <!--expanded area-->
+    </form>
+
+    <hr>
+    <form action="main">
+        <label for="Name">Name:</label>
+        <input type="text" id="Name" name="Name" > <br>
+        <label for="Age">Age:</label>
+        <input type="number" id="Age" name="Age"> <br>
+        <label>Sex:</label>
+        <input type="radio" id="Male" name="Sex" value="Male">
+        <label for="Male">Male</label>
+        <input type="radio" id="Female" name="Sex" value="Male">
+        <label for="Female">Female</label> <br>
+        <label for="country">Country:</label>
+        <select id="country">
+            <option selected>Select an option</option>
+            <option value="India">India</option>
+            <option value="India">Nepal</option>
+            <option value="India">USA</option>
+            <option value="India">Germany</option>
+        </select> <br>
+        <label for="Message">Message:</label> <br>
+        <textarea id="Message" placeholder="write your message here" rows="10" cols="60"></textarea>
+        <br>
+        <input type="checkbox" id="subscribe">
+        <label for="subscribe">Subscribe?</label>
+        <br>
+        <button>Submit</button>
+    </form>
+    <hr>
+    <hr>
+
+    <form action="final">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Write your name" name="Name"> <br>
+        <label for="email">Email:</label> 
+        <input type="email" id="email" name="Email" placeholder="Write your email"> <br>
+        <label for="message">Message:</label> <br>
+        <textarea id="message" rows="5" cols="40" name="Message"></textarea>
+        <br>
+        <br>
+        <label>Rate us out of 5:</label> <br>
+        <input type="radio" id="1" name="rating">
+        <label for="1">1</label> <br>
+        <input type="radio" id="2" name="rating">
+        <label for="2">2</label> <br>
+        <input type="radio" id="3" name="rating">
+        <label for="3">3</label> <br>
+        <input type="radio" id="4" name="rating">
+        <label for="4">4</label> <br>
+        <input type="radio" id="5" name="rating">
+        <label for="5">5</label> <br>
+        <button>Send your message!</button>
+    </form>
+</body>
+</html>
