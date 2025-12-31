@@ -1,0 +1,92 @@
+*{
+    font-family: Georgia;
+}
+
+h1,h3{
+    color: brown;
+}
+
+#login{
+    background-color: white;
+}
+
+#signup{
+    color: white;
+    background-color: brown ;
+}
+
+.upvote{
+    color: white;
+    background-color: green;;
+}
+
+.get a{
+    color: red;
+    background-color: wheat;
+}
+
+nav ul li a{
+    color: darkmagenta;
+}
+
+p + h3{
+    text-decoration: underline;
+}
+
+.upvote + button{
+    background-color: wheat;
+}
+
+div>input{
+    background-color: rgb(205, 214, 231);
+    color: white;
+}
+
+input[type="text"]{
+    color:red;
+}
+
+input[type="password"]{
+    color: blue;
+}
+
+input[type]{
+    background-color: lightgoldenrodyellow;
+}
+
+button:hover{
+    background-color: yellow;
+    color: black;
+}
+
+h3:active{
+    color:black;
+}
+
+input[type="password"]:focus{
+    text-decoration: line-through;
+}
+
+input[type="radio"]:checked + label{    
+    background-color: black;
+    color: white;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.get:nth-last-of-type(2n){
+    background-color: aquamarine;
+}
+
+h1::first-letter{
+    background-color: black;
+    color: yellow;
+}
+
+p::first-line{
+    color: blue;
+}
+
+p::selection{
+    background-color: yellow;
+}

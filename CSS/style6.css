@@ -1,0 +1,89 @@
+h1{
+    height: 100px;
+    width: 180px;
+    text-align: center;
+    padding-top: 50px;
+    border-color: black;
+    border-width: 5px;
+    border-radius: 25px;
+    border-style: solid;
+    color: black;
+    background-color: rgb(84, 84, 12);
+    opacity: 0.9;
+    background-image:url(mine.jpg);
+    background-size: cover;
+}
+
+button{
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
+    border-color: black;
+    border-style: solid;
+    border-width: 5px;
+    background-color: yellow;
+    transition: margin top;
+    transition-duration: 1.5s;
+    transition-delay: 0.3s ;
+    transition-timing-function:ease-out;
+    margin: 10px;
+}
+
+button:hover{
+    background-color: brown;
+    border-radius: 50%;
+    margin-top: 100px;
+    transform: translate(50px, 20px);
+    box-shadow: 2px 3px 4px red;
+}
+
+h2{
+    padding: 50px;
+}
+
+div{
+    background-color: wheat;
+    height: 50px;
+    width: 300px;
+    margin: 120px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: blue;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.first:hover{
+    background-color: black;
+    box-shadow: 5px 8px 9px grey;
+}
+
+div:nth-of-type(2n){
+    background-color: lightgrey;
+}
+
+div:nth-of-type(3n){
+    background-color: lightsalmon;
+}
+
+.first{
+    transform: rotate(10deg);
+}
+
+.second{
+    transform: scale(0.5);
+    /* reduces the box to 0.5 of its original value. */
+    transform: translate(20px,50px)
+}
+
+.third{
+    transform: scale(0.5,1.25);
+    /* scales along x axis and y axis. */
+    transform: translateX(30px);
+    /* moves 30px along x-axis */
+    
+}
+
+.fourth{
+    transform: skewX(30deg);
+}

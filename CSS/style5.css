@@ -1,0 +1,79 @@
+h1{
+    display:inline;
+    background-color: yellow;
+}
+
+span{
+    display:block;
+    background-color: wheat;
+    margin: 5px;
+}
+
+
+#another{
+    display: inline-block;
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    border:50px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.done{
+    /* display:inline-block; */
+    background-color: wheat;
+    width: 100px;
+    height: 100px;
+    border:50px;
+    margin: 15px;
+    padding: 15px;
+}
+
+h2{
+    border: 5px solid black;
+    width: 18%;
+    background-color: antiquewhite;
+}
+
+.outer{
+    border: 2px blue solid;
+    height: 300px;
+    width: 250px;
+    font-size: 20px;
+    background-color: grey;
+}
+
+.inner{
+    border: 5px black solid;
+    width: 20%;
+    height: 20%;
+    margin-left: 50%;
+    font-size: 0.8em;
+    padding: 2em; 
+    /*padding will be 16px with respect to child element not parent. */
+ } 
+
+ button{
+    background-color: wheat;
+    border: 5px blue solid;
+    font-size: 80px;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+ }
+
+ section{
+    font-size: 25px;
+ }
+
+ .inside{
+    font-size: 2em;
+ }
+
+ .in{
+    font-size: 2rem;
+ }
+
+ul{
+    display: inline;
+}

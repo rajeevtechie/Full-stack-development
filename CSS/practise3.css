@@ -1,0 +1,25 @@
+
+#internal{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border-style: solid;
+    margin: 10px;
+}
+
+.red{
+    background-color: red;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.green{
+    background-color: green;
+}
+.external{
+    height: 200px;
+    width: 73px;
+    border-style: solid;
+}

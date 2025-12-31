@@ -1,0 +1,38 @@
+div{
+    height: 100px;
+    width: 600px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: lightblue;
+    border-left-color: wheat;
+    border-right-style: dotted;
+    border-radius: 20px;
+    border-top-left-radius: 100px;
+    padding: 35px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+
+h1{ 
+    text-align: center;
+    height: 100px;
+    width: 350px;
+    border: 5px blue solid;
+    border-radius: 50%;
+    padding-top: 50px;
+}
+
+button{
+    height: 50px;
+    border-radius: 50%;
+    background-color: wheat;
+}
+
+p{
+    height: 60px;
+    width: 90px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: aquamarine;
+    padding: 20px 20px 32px 43px;
+}
