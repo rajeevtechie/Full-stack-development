@@ -1,7 +1,7 @@
 import './product.css';
 
-function Product1({ title, price, specs, specs2, specs3 }) {
-    const styles = {backgroundColor: price>3000? "wheat": ""};
+function Product1({ title, price, specs, specs2, specs3 }) { //props
+    const styles = {backgroundColor: price>3000? "wheat": ""}; //dynamic styling
 
     return (
         <div className="product" style={styles}>
