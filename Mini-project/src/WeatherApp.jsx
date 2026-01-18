@@ -15,7 +15,7 @@ export default function WeatherApp() {
     weather: [{ description: "haze" }],
   });
 
-  // ✅ error should be STRING
+  //error should be STRING
   const [error, setError] = useState("");
 
   const API_KEY = "2539e6463c2336857edea30d41d76b02";
@@ -31,7 +31,7 @@ export default function WeatherApp() {
 
       const data = await response.json();
 
-      // ✅ check API response body
+      // check API response body
       if (data.cod && data.cod !== 200) {
         throw new Error("No such place exists");
       }
@@ -48,7 +48,7 @@ export default function WeatherApp() {
 
       <SearchBox onSearch={fetchWeather} />
 
-      {/* 🔴 ERROR MESSAGE */}
+      {/*Error message */}
       {error && (
         <p style={{ color: "red", marginTop: "10px" }}>
           {error}
