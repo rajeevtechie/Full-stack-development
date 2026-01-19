@@ -1,9 +1,9 @@
 //Array methods
 //forEach
-const prices = [100, 200, 300];
+const prices1 = [100, 200, 300];
 let total = 0;
 
-prices.forEach(price => {
+prices1.forEach(price => {
   total += price;
 });
 
@@ -22,26 +22,26 @@ users.forEach(user => {
 console.log(users);
 
 //map()
-const numbers = [1, 2, 3, 4];
+const number_s = [1, 2, 3, 4];
 
-const doubled = numbers.map(num => num * 2);
+const doubled = number_s.map(num => num * 2);
 
 console.log(doubled); // [2, 4, 6, 8]
 
-const listings = [ //real life example
+const listing_s = [ //real life example
   { city: "Goa", price: 1200 },
   { city: "Mumbai", price: 2500 },
   { city: "Pune", price: 1800 }
 ];
 
-const cards = listings.map(listing => {
+const card_s = listing_s.map(listing => {
   return `<div class="card">
             <h2>${listing.city}</h2>
             <p>₹${listing.price} per night</p>
           </div>`;
 });
 
-console.log(cards);
+console.log(card_s);
 /*
 [
   "<div class='card'>...</div>",
@@ -51,19 +51,19 @@ console.log(cards);
 */
 
 // filter()
-const numbers = [10, 25, 30, 45, 50];
+const numbers7 = [10, 25, 30, 45, 50];
 
-const greaterThan30 = numbers.filter(num => num > 30);
+const greaterThan30 = numbers7.filter(num => num > 30);
 
 console.log(greaterThan30); // [45, 50]
 
-const listings = [
+const listings5 = [
   { city: "Goa", price: 1200 },
   { city: "Mumbai", price: 2500 },
   { city: "Pune", price: 1800 }
 ];
 
-const budgetFriendly = listings.filter(listing => listing.price < 2000);
+const budgetFriendly = listings5.filter(listing => listing.price < 2000);
 
 console.log(budgetFriendly);
 // [
@@ -72,14 +72,14 @@ console.log(budgetFriendly);
 // ]
 
 //difference between map and filter
-const listings = [
+const listings6 = [
   { city: "Goa", price: 1200 },
   { city: "Mumbai", price: 2500 },
   { city: "Pune", price: 1800 }
 ];
 
 // filter: only budget-friendly listings
-const budgetListings = listings.filter(l => l.price < 2000);
+const budgetListings = listings6.filter(l => l.price < 2000);
 
 // map: transform listings into UI cards
 const cards = budgetListings.map(l => `<div>${l.city} - ₹${l.price}</div>`);
@@ -88,51 +88,51 @@ console.log(cards);
 // ["<div>Goa - ₹1200</div>", "<div>Pune - ₹1800</div>"]
 
 //every()
-const numbers = [2, 4, 6, 8];
+const numbers5 = [2, 4, 6, 8];
 
-const allEven = numbers.every(num => num % 2 === 0);
+const allEven = numbers5.every(num => num % 2 === 0);
 
 console.log(allEven); // true
 
-const listings = [
+const listings7 = [
   { city: "Goa", price: 1200 },
   { city: "Mumbai", price: 2500 },
   { city: "Pune", price: 1800 }
 ];
 
-const withinBudget = listings.every(l => l.price < 3000);
+const withinBudget = listings7.every(l => l.price < 3000);
 
 console.log(withinBudget); // true
 
 //some()
-const numbers = [1, 3, 5, 7];
+const n_umbers = [1, 3, 5, 7];
 
-const hasEven = numbers.some(num => num % 2 === 0);
+const hasEven = n_umbers.some(num => num % 2 === 0);
 
 console.log(hasEven); // false
 
-const listings = [
+const l_istings = [
   { city: "Goa", price: 1200 },
   { city: "Mumbai", price: 2500 },
   { city: "Pune", price: 1800 }
 ];
 
-const hasBudgetOption = listings.some(l => l.price < 1500);
+const hasBudgetOption = l_istings.some(l => l.price < 1500);
 
 console.log(hasBudgetOption); // true
 
 //reduce()
-const numbers = [1, 2, 3, 4, 5];
+const nu_mbers = [1, 2, 3, 4, 5];
 
-const sum = numbers.reduce((acc, num) => acc + num, 0);
+const sum = nu_mbers.reduce((acc, num) => acc + num, 0);
 
 console.log(sum); // 15
 
-const nested = [[1, 2], [3, 4], [5]];
+const n_ested = [[1, 2], [3, 4], [5]];
 
-const flat = nested.reduce((acc, arr) => acc.concat(arr), []); //flatten an array
+const f_lat = n_ested.reduce((acc, arr) => acc.concat(arr), []); //flatten an array
 
-console.log(flat); // [1, 2, 3, 4, 5]
+console.log(f_lat); // [1, 2, 3, 4, 5]
 
 const fruits = ["apple", "banana", "apple", "cherry", "banana", "apple"];
 
@@ -180,12 +180,12 @@ console.log(createUser({ name: "Rajeev", role: "admin" }));
 // { name: "Rajeev", role: "admin" }
 
 //Spread operator
-const numbers = [1, 2, 3]; //expanding arrays
-console.log(...numbers); 
+const num_bers = [1, 2, 3]; //expanding arrays
+console.log(...num_bers); 
 // Output: 1 2 3
 
-const word = "Rajeev"; //expanding string
-console.log([...word]); 
+const w_ord = "Rajeev"; //expanding string
+console.log([...w_ord]); 
 // ["R", "a", "j", "e", "e", "v"]
 
 function sum(a, b, c) {  //passing arguments
@@ -197,21 +197,21 @@ console.log(sum(...nums)); // 60
 
 //Spread in Array Literal
 const arr = [1, 2, 3];
-const copy = [...arr];  //Copying Arrays (Immutable Copy)
+const c_opy = [...arr];  //Copying Arrays (Immutable Copy)
 
-console.log(copy); // [1, 2, 3]  
-console.log(arr === copy); // false (different arrays)
+console.log(c_opy); // [1, 2, 3]  
+console.log(arr === c_opy); // false (different arrays)
 
-const a = [1, 2];
-const b = [3, 4];
-const merged = [...a, ...b];  //merging arrays
+const a1 = [1, 2];
+const b1 = [3, 4];
+const m_erged = [...a1, ...b1];  //merging arrays
 
-console.log(merged); // [1, 2, 3, 4]
+console.log(m_erged); // [1, 2, 3, 4]
 
-const base = [1, 2, 3];
-const extended = [0, ...base, 4]; //Inserting Elements
+const b_ase = [1, 2, 3];
+const e_xtended = [0, ...b_ase, 4]; //Inserting Elements
 //Spread lets you insert arrays in the middle of another array
-console.log(extended); // [0, 1, 2, 3, 4]
+console.log(e_xtended); // [0, 1, 2, 3, 4]
 
 const word = "Rajeev";
 const chars = [...word]; // Expanding Strings into Arrays
@@ -223,9 +223,9 @@ const flat = [...nested[0], ...nested[1]]; //Flattening Arrays (Shallow)
 
 console.log(flat); // [1, 2, 3, 4]
 
-const numbers = [10, 25, 3, 99, 42];
+const numbe_rs = [10, 25, 3, 99, 42];
 
-const min = Math.min(...numbers); //Minimum with spread
+const min = Math.min(...numbe_rs); //Minimum with spread
 
 console.log(min); // 3
 
@@ -250,12 +250,12 @@ console.log(finalAmenities);
 // ["WiFi", "Parking", "Pool", "Breakfast"]
 
 //Spread in Object Literal
-const user = { name: "Rajeev", role: "Developer" };
-const copy = { ...user }; //Copying Objects
+const us_er = { name: "Rajeev", role: "Developer" };
+const copy = { ...us_er }; //Copying Objects
 
 console.log(copy); 
 // { name: "Rajeev", role: "Developer" }
-console.log(user === copy); // false (different objects)
+console.log(us_er === copy); // false (different objects)
 
 const personal = { name: "Rajeev", location: "Mulshi" };
 const professional = { role: "Full-Stack Developer", company: "RoamStay" };
@@ -301,20 +301,20 @@ function sum(...numbers) { //Rest in Function Parameters
 console.log(sum(10, 20, 30)); // 60
 
 
-const [first, second, ...rest] = [1, 2, 3, 4, 5]; //Rest in Array Destructuring
+const [f_irst, second, ...rest] = [1, 2, 3, 4, 5]; //Rest in Array Destructuring
 //rest gathers the remaining elements into an array
 
-console.log(first);  // 1
+console.log(f_irst);  // 1
 console.log(second); // 2
 console.log(rest);   // [3, 4, 5]
 
 const user2 = { name: "Rajeev", role: "Developer", location: "Mulshi" };
 
-const { name, ...details } = user2; //Rest in Object Destructuring
+const { nam_e, ...deta_ils } = user2; //Rest in Object Destructuring
 //details collects all properties except name
 
-console.log(name);    // "Rajeev"
-console.log(details); // { role: "Developer", location: "Mulshi" }
+console.log(nam_e);    // "Rajeev"
+console.log(deta_ils); // { role: "Developer", location: "Mulshi" }
 
 function applyFilters(city, ...otherFilters) {
   console.log(`City: ${city}`);
