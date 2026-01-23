@@ -26,3 +26,9 @@ body {
 #description {
     background-color: antiquewhite;
 }
+
+/* dom.css */
+.highlight {
+  background-color: yellow;
+  border: 2px solid black;
+}
