@@ -70,9 +70,9 @@ console.log(heading.innerText);
 
 //Manipulating style
 //Directly via ".style" property, here "style" only gives us the inline properties.
-const heading = document.querySelector("h1");
-heading.style.color = "red";
-heading.style.fontSize = "3rem";
+// const heading = document.querySelector("h1");
+// heading.style.color = "red";
+// heading.style.fontSize = "3rem";
 
 // //Toggling CSS classes: first define styles in CSS, then add/remove classes
 // const box = document.querySelector(".box");
@@ -93,3 +93,21 @@ heading.style.fontSize = "3rem";
 //   desc.style.backgroundColor = "lightblack";
 //   desc.style.fontWeight = "bold";
 // });
+
+//classList property
+//adding a class
+const heading1 = document.querySelector("h1");
+heading1.classList.add("highlight"); //.highlight is already written in css, so h1 will be provided with certain styling.
+console.log(heading1.classList); //prints the total classes for an element
+
+//removing a class
+heading.classList.remove("highlight");
+
+//add a class if absent and remove a class if present
+heading.classList.toggle("highlight");
+
+//checks if an element has a class
+console.log(heading.classList.contains("highlight")); // true/false
+
+//replace one class with another
+heading.classList.replace("highlight", "active");
