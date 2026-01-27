@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spider-Man</title>
+    <link rel="stylesheet" href="dom3.css" />
+</head>
+
+<body>
+
+    <p>Event bubbling</p>
+    <div id="parent" style="padding:20px; background:lightgray;">
+        Parent Div
+        <button id="child">Click Me</button>
+    </div>
+
+    <p>Event delegation</p>
+    <div id="box">
+        <a href="#" class="boxLink">Link 1</a>
+        <a href="#" class="boxLink">Link 2</a>
+        <a href="#" class="boxLink">Link 3</a>
+    </div>
+    <script src="dom3.js"></script>
+</body>
+
+</html>
